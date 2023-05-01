@@ -1,7 +1,7 @@
 import NextAuth from 'next-auth';
 import { AppProviders } from 'next-auth/providers';
 import CredentialsProvider from 'next-auth/providers/credentials';
-import GoogleProvider from "next-auth/providers/GoogleProvider"
+import GoogleProvider from "next-auth/providers/google"
 
 let useMockProvider = process.env.NODE_ENV === 'test';
 const { Google_ID, GOOGLE_SECRET, NODE_ENV, APP_ENV } = process.env;
